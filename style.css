@@ -1,5 +1,5 @@
 /*
-Theme Name: my-theme-wp
+Theme Name: wp-theme-custom
 Theme URI: localhost
 Description: Tema pessoal para afins de aprendizagem.
 Author: Pedroemanuelavelar
@@ -7,6 +7,36 @@ Author URI: https://github.com/Pedroemanuelavelar
 Version: 1.0
 */
 
+/*-------------
+ Cores Globais  
+---------------*/
+:root {
+    
+    --color-0: #000;
+    --color-1: #FFF;
+    --color-2: #ececec;
+    --color-3:  #ebebeb;
+    --color-4: #fcae61;
+    --color-5: rgba(75, 74, 72, 0.39);
+    --color-6: rgba(75, 74, 72, .14);
+    /*--color-7-badge-check: #feaa25;*/
+    --color-8-titles: #242f51;
+    --color-10-badge-check-bg: #e2eaed;
+    --color-11-paragraphs: #616368;
+    --color-12: #f55767;
+    --color-13: #2563ff;
+    --color-14: #40975f;
+    --color-15-stars: #ffcc00;
+    --color-16-slider-active: #eff3f8;
+    --color-17-faq-bg: #f5f7fa;
+    --color-18-social-icons-and-copyrigth: #273043;
+    --color-p: #2500f9;
+    --color-p-hover: rgba(37,0,249,0.8);
+}
+
+/*-------------
+ Configurações  
+---------------*/
 body {
     padding: 0;
     margin: 0;
@@ -14,15 +44,156 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/*-----------
+p {
+    line-height: 23px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-11-paragraphs);
+}
+
+h1,h2 {
+    color: var(--color-8-titles);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------------
+ Cabeçalho Menu  
+----------------*/
+.wrap-menu {
+    padding: 150px 0;
+}
+
+.nav-bar {
+    justify-content: space-between;
+    display: flex;
+    padding: 150px 0px 0px 133px;
+    background-color: #fdfdfe;
+}
+
+a.logo-menu{
+    color: var(--color-8-titles);
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 1.0;
+    transition: all .4s;
+}
+
+a.logo-menu:hover {
+    opacity: 0.6;
+}
+
+.logo-menu>span.app {
+    color: var(--color-4);
+}
+
+.menu-header li {
+    list-style: none;
+    color:  var(--color-8-titles);
+    font-size: 14px;
+    display: inline;
+    margin-left: 20px;
+    transition: all .4s;
+}
+
+ul.menu-header {
+    padding-left: 273px;
+}
+
+.menu-header li:hover {
+    color: var(--color-4);
+}
+
+/*---------
  header  
-------------*/
+-----------*/
 header .header {
     background: url(assets/images/AppLab-bg-header.jpg) center top no-repeat;
     background-size: cover;
 }
 
+/*---------------------------
+ Wrap, centraliza o conteudo  
+-----------------------------*/
+.wrap {
+    margin: 0 auto;
+    width: 960px;
+}
+
+/*---------------------------
+ badge-check image
+-----------------------------*/
+.wrap .badge-check {
+    background: url(assets/Images/AppLab-badge-check.png) no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+    transform: translateY(39px);
+}
+
+/*---------------------------
+ barra cinza-azulada
+-----------------------------*/
+.bg-content-badge {
+    color: var(--color-8-titles);
+    background-color: var(--color-10-badge-check-bg);
+    border-radius: 17.5px;
+    padding: 5px 34px 2px 49px;
+    font-size: 13px;
+}
+
 .header h1.principal-title {
     font-size: 60px;
     font-weight: 600;
+    line-height: 75px;
+    margin: 21px 0px;
+}
+
+.paragraph {
+    text-align: right;
+    font-size: 18px;
+    line-height: 28px;
+
+    display: flex;
+    max-width: 463px;
+    justify-content: right;
+    text-align: initial;
+
+    margin-bottom: 40px;
+}
+
+.button {
+    color: #FFF;
+    background-color: var(--color-p);
+    padding: 16px 41px;
+    border: 1px solid transparent;
+    border-radius: 28.5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all .4s;
+}
+
+.button:hover {
+    background-color: var(--color-p-hover);
+}
+
+.button-two {
+    font-size: 16px;
+    font-weight: 400;
+    transition: all .4s;
+    color: var(--color-p);
+    padding-left: 27px;
+}
+
+.button-two:hover {
+    color: var(--color-p-hover);
+    text-decoration: underline;
+}
+
+.phone-header {
+    background: url(assets/Images/AppLab-pnone-app-header1.png) no-repeat top left;
+    background-size: contain;
+    text-indent: -99999px;
 }
