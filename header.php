@@ -11,12 +11,52 @@
     <?php wp_head(); ?>
 </head>
 <body>
+<div id="wrap-menu">
+    <nav class="nav-bar">
+        <a href="<?php site_url(); ?>" class="logo-menu"><span class="app">App</span>Lab</a>
+        <ul class="menu-header">
+            <a href="<?php site_url(); ?>">
+                <li>Home</li>
+            <a>
+            <a href="<?php site_url(); ?>">
+                <li>Key Features</li> 
+            <a>
+            <a href="<?php site_url(); ?>">
+                <li>Princing</li> 
+            <a>
+            <a href="<?php site_url(); ?>">
+                <li>Testiminial</li> 
+            <a>
+            <a href="<?php site_url(); ?>">
+                <li>FAQ</li>
+            <a>
+        </ul>
+    </nav>
+</div>
 <header>
     <div class="header">
-        <i class="fal fa-badge-check"></i><span class="bg-content-badge">#1 Editiors Choice App of 2020</span>
-        <h1 class="principal-title">Best app for your</br>
-modern lifestyle</h1>
+        <div class="wrap">
+            <div class="collum-1">
+                <div class="badge-check">
+                    badge-check
+                </div>
+                <p><span class="bg-content-badge">#1 Editiors Choice App of 2020</span></p>
+                <h1 class="principal-title">Best app for your</br>
+                modern lifestyle</h1>
+                <p class="paragraph">Increase productivity with a simple to-do app. app for
+                managing your personal budgets.</p>
+                <a href="<?php site_url(); ?>" class="button">Try for free</a>
+                <a href="<?php site_url(); ?>" class="button-two">Watch demo video</a>
+            </div>
+
+            <div class="collum-2">
+                <div class="phone-header">
+                    
+                </div>
+            </div>
+        </div>
     </div>
 </header>
+    
 
     
